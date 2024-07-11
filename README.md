@@ -1,6 +1,6 @@
-# Project Name
+# Brave Distro Framework
 
-**Brave Distro Framework** isa high-level Python web framework built with Django that encourages rapid development for project in MusicTech industry
+**Brave Distro Framework** i sa high-level Python web framework built with Django that encourages rapid development for project in MusicTech industry
 
 ## Table of Contents
 
