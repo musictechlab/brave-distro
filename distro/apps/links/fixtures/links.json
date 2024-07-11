@@ -1,0 +1,82 @@
+[
+    {
+        "model": "links.link",
+        "pk": 1,
+        "fields": {
+            "title": "Amazon",
+            "help_text": "Amazon Profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 2,
+        "fields": {
+            "title": "Apple",
+            "help_text": "Apple Profile URL (e.g. https://music.apple.com/us/artist/kwe-the-artist/1273564165) Please add a valid Apple profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 3,
+        "fields": {
+            "title": "Facebook",
+            "help_text": "Facebook Profile URL (e.g. https://www.facebook.com/john)"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 4,
+        "fields": {
+            "title": "Instagram",
+            "help_text": "Instagram Profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 5,
+        "fields": {
+            "title": "SoundCloud",
+            "help_text": "SoundCloud Profile URL (e.g. https://soundcloud.com/john)"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 6,
+        "fields": {
+            "title": "Spotify",
+            "help_text": "Spotify Profile URL (e.g. https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O)"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 7,
+        "fields": {
+            "title": "Website",
+            "help_text": "Website Profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 8,
+        "fields": {
+            "title": "Youtube",
+            "help_text": "Youtube Profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 9,
+        "fields": {
+            "title": "TikTok",
+            "help_text": "TikTok Profile URL"
+        }
+    },
+    {
+        "model": "links.link",
+        "pk": 10,
+        "fields": {
+            "title": "Twitter",
+            "help_text": "Twitter Profile URL"
+        }
+    }
+]

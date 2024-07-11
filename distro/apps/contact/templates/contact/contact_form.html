@@ -1,0 +1,52 @@
+<form hx-post="{% url 'contact:contact_form' %}" method="post" class="flex flex-col gap-6" novalidate="novalidate">
+    {% csrf_token %}
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+
+    <div class="group">
+        <label>
+            <span class="font-medium text-gray-700 text-sm dark:text-gray-200">
+                Your name <span class="text-red-600">*</span>
+            </span>
+            <input type="text" name="name" placeholder="Enter name" value="{{ form.name.value|default_if_none:'' }}"
+                class="appearance-none bg-transparent border-b border-gray-300 font-normal placeholder-gray-400 py-3 rounded-none text-gray-500 text-base w-full focus:border-green-600 focus:outline-none group-[.errors]:border-red-600 group-[.errors]:focus:ring-red-200 dark:border-gray-700 dark:text-gray-400 dark:focus:border-green-600 dark:group-[.errors]:border-red-500 dark:group-[.errors]:focus:ring-red-600/40"
+                required id="id_name">
+            {% if form.name.errors %}
+                <div class="text-red-600 text-sm">{{ form.name.errors }}</div>
+            {% endif %}
+        </label>
+    </div>
+
+    <div class="group">
+        <label>
+            <span class="font-medium text-gray-700 text-sm dark:text-gray-200">
+                E-mail address <span class="text-red-600">*</span>
+            </span>
+            <input type="email" name="email" placeholder="name@example.com" value="{{ form.email.value|default_if_none:'' }}"
+                class="appearance-none bg-transparent border-b border-gray-300 font-normal placeholder-gray-400 py-3 rounded-none text-gray-500 text-base w-full focus:border-green-600 focus:outline-none group-[.errors]:border-red-600 group-[.errors]:focus:ring-red-200 dark:border-gray-700 dark:text-gray-400 dark:focus:border-green-600 dark:group-[.errors]:border-red-500 dark:group-[.errors]:focus:ring-red-600/40"
+                maxlength="320" required id="id_email">
+            {% if form.email.errors %}
+                <div class="text-red-600 text-sm">{{ form.email.errors }}</div>
+            {% endif %}
+        </label>
+    </div>
+
+    <div class="group">
+        <label>
+            <span class="font-medium text-gray-700 text-sm dark:text-gray-200">
+                Message <span class="text-red-600">*</span>
+            </span>
+            <textarea name="message" cols="40" rows="2" placeholder="Please describe how we can help you"
+                class="appearance-none bg-transparent border-b border-gray-300 font-normal placeholder-gray-400 py-3 rounded-none text-gray-500 text-base w-full focus:border-green-600 focus:outline-none group-[.errors]:border-red-600 group-[.errors]:focus:ring-red-200 dark:border-gray-700 dark:text-gray-400 dark:focus:border-green-600 dark:group-[.errors]:border-red-500 dark:group-[.errors]:focus:ring-red-600/40"
+                required id="id_message">{{ form.message.value|default_if_none:'' }}</textarea>
+            {% if form.message.errors %}
+                <div class="text-red-600 text-sm">{{ form.message.errors }}</div>
+            {% endif %}
+        </label>
+    </div>
+
+    <button type="submit"
+        class="bg-green-600 border border-transparent flex flex-row font-medium group items-center justify-center px-5 py-2 rounded-none text-sm text-gray-900 lg:w-auto">
+        Send message
+        <i class="material-symbols-outlined ml-2 relative right-0 text-lg transition-all group-hover:-right-1">arrow_forward</i>
+    </button>
+</form>

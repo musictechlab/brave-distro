@@ -1,0 +1,1042 @@
+[
+    {
+        "model": "platforms.platform",
+        "pk": 1,
+        "fields": {
+            "name": "Spotify",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 2,
+        "fields": {
+            "name": "Apple Music/iTunes",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 3,
+        "fields": {
+            "name": "Amazon",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 4,
+        "fields": {
+            "name": "YouTube Music/Content ID",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 5,
+        "fields": {
+            "name": "Kuack",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 6,
+        "fields": {
+            "name": "Bitel Musica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 7,
+        "fields": {
+            "name": "Digicel d’Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 8,
+        "fields": {
+            "name": "Audible Magic",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 9,
+        "fields": {
+            "name": "Kolbi Musica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 10,
+        "fields": {
+            "name": "Movistar Musica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 11,
+        "fields": {
+            "name": "Orange",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 12,
+        "fields": {
+            "name": "Virgin Lola Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 13,
+        "fields": {
+            "name": "Viva Hype Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 14,
+        "fields": {
+            "name": "Vodafone Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 15,
+        "fields": {
+            "name": "Shazam",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 16,
+        "fields": {
+            "name": "Claro Musica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 17,
+        "fields": {
+            "name": "M’Beats",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 18,
+        "fields": {
+            "name": "Brisanet Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 19,
+        "fields": {
+            "name": "DigiMusic",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 20,
+        "fields": {
+            "name": "Rappi Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 21,
+        "fields": {
+            "name": "Altice Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 22,
+        "fields": {
+            "name": "TIDAL",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 23,
+        "fields": {
+            "name": "Line Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 24,
+        "fields": {
+            "name": "Deedo",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 25,
+        "fields": {
+            "name": "TrackDrip",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 26,
+        "fields": {
+            "name": "Facebook/Instagram",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 27,
+        "fields": {
+            "name": "Qobuz",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 28,
+        "fields": {
+            "name": "Tencent QQ/Kugou/Kuwo/WeSing/Joox",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 29,
+        "fields": {
+            "name": "AudioMack",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 30,
+        "fields": {
+            "name": "ByteDance TikTok/Resso",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 31,
+        "fields": {
+            "name": "Jaxsta",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 32,
+        "fields": {
+            "name": "Deezer",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 33,
+        "fields": {
+            "name": "Napster",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 34,
+        "fields": {
+            "name": "Telefonica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 35,
+        "fields": {
+            "name": "SFR",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 36,
+        "fields": {
+            "name": "BMW",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 37,
+        "fields": {
+            "name": "Huawei Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 38,
+        "fields": {
+            "name": "Rakuten",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 39,
+        "fields": {
+            "name": "Mora Qualitas",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 40,
+        "fields": {
+            "name": "SONOS",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 41,
+        "fields": {
+            "name": "SoundCloud Go",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 42,
+        "fields": {
+            "name": "Anghami",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 43,
+        "fields": {
+            "name": "AWA",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 44,
+        "fields": {
+            "name": "MixCloud",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 45,
+        "fields": {
+            "name": "Transsnet Boomplay",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 46,
+        "fields": {
+            "name": "7 Digital",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 47,
+        "fields": {
+            "name": "Exlibris",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 48,
+        "fields": {
+            "name": "Grandpad",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 49,
+        "fields": {
+            "name": "NEC",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 50,
+        "fields": {
+            "name": "Fan Label",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 51,
+        "fields": {
+            "name": "Digster",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 52,
+        "fields": {
+            "name": "eMusic",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 53,
+        "fields": {
+            "name": "Global Eagle",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 54,
+        "fields": {
+            "name": "Moodagent",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 55,
+        "fields": {
+            "name": "Mus.uy",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 56,
+        "fields": {
+            "name": "MuzArcade",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 57,
+        "fields": {
+            "name": "Audiobyte Songclip",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 58,
+        "fields": {
+            "name": "Trebel Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 59,
+        "fields": {
+            "name": "Weltbild Radio",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 60,
+        "fields": {
+            "name": "Xite",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 61,
+        "fields": {
+            "name": "Klassik Radio",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 62,
+        "fields": {
+            "name": "Electric Jukebox/Roxi",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 63,
+        "fields": {
+            "name": "Soundtrack Your Brand",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 64,
+        "fields": {
+            "name": "Soundhound",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 65,
+        "fields": {
+            "name": "Global Radio",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 66,
+        "fields": {
+            "name": "Jazzed",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 67,
+        "fields": {
+            "name": "Soundmouse",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 68,
+        "fields": {
+            "name": "iMusica",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 69,
+        "fields": {
+            "name": "Contestone/Ringbacktone",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 70,
+        "fields": {
+            "name": "Now Music A1/Mtel/VIP",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 71,
+        "fields": {
+            "name": "Slacker",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 72,
+        "fields": {
+            "name": "KKBOX",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 73,
+        "fields": {
+            "name": "Turkcell fizy",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 74,
+        "fields": {
+            "name": "United Media Agency",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 75,
+        "fields": {
+            "name": "JioSaavn",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 76,
+        "fields": {
+            "name": "MusicJet",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 77,
+        "fields": {
+            "name": "Gaana",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 78,
+        "fields": {
+            "name": "Alibaba Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 79,
+        "fields": {
+            "name": "Yandex Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 80,
+        "fields": {
+            "name": "Zvooq",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 81,
+        "fields": {
+            "name": "NetEase Cloud Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 82,
+        "fields": {
+            "name": "Beatsource",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 83,
+        "fields": {
+            "name": "YG Plus",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 84,
+        "fields": {
+            "name": "Nuuday TDC/youSee",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 85,
+        "fields": {
+            "name": "Spinlet",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 86,
+        "fields": {
+            "name": "iHeartRadio",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 87,
+        "fields": {
+            "name": "Hungama",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 88,
+        "fields": {
+            "name": "Snap",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 89,
+        "fields": {
+            "name": "J:COM",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 90,
+        "fields": {
+            "name": "KDDI",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 91,
+        "fields": {
+            "name": "Muud",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 92,
+        "fields": {
+            "name": "RecoChoku",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 93,
+        "fields": {
+            "name": "Vibes",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 94,
+        "fields": {
+            "name": "Joox",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 95,
+        "fields": {
+            "name": "Telmore",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 96,
+        "fields": {
+            "name": "Muda",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 97,
+        "fields": {
+            "name": "MePlaylist",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 98,
+        "fields": {
+            "name": "BrandSpins",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 99,
+        "fields": {
+            "name": "Broadtime",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 100,
+        "fields": {
+            "name": "BYO",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 101,
+        "fields": {
+            "name": "CUR Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 102,
+        "fields": {
+            "name": "Freeform",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 103,
+        "fields": {
+            "name": "Global Tel",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 104,
+        "fields": {
+            "name": "Grruv",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 105,
+        "fields": {
+            "name": "ImageSound",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 106,
+        "fields": {
+            "name": "Imbee",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 107,
+        "fields": {
+            "name": "JoMedia",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 108,
+        "fields": {
+            "name": "Keefe Group",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 109,
+        "fields": {
+            "name": "LifeScape",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 110,
+        "fields": {
+            "name": "MUMO",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 111,
+        "fields": {
+            "name": "My Playlist",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 112,
+        "fields": {
+            "name": "NicheStreem",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 113,
+        "fields": {
+            "name": "NSM",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 114,
+        "fields": {
+            "name": "R&R",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 115,
+        "fields": {
+            "name": "RcrdClub",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 116,
+        "fields": {
+            "name": "Spark.dj",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 117,
+        "fields": {
+            "name": "SuperCloud",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 118,
+        "fields": {
+            "name": "Sounday",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 119,
+        "fields": {
+            "name": "The First Club",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 120,
+        "fields": {
+            "name": "ToonGoggles",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 121,
+        "fields": {
+            "name": "Univision",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 122,
+        "fields": {
+            "name": "You42",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 123,
+        "fields": {
+            "name": "Zonga",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 124,
+        "fields": {
+            "name": "AirTel Wynk Music",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 125,
+        "fields": {
+            "name": "Kakao Melon",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 126,
+        "fields": {
+            "name": "Dwango",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 127,
+        "fields": {
+            "name": "Jumamo",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 128,
+        "fields": {
+            "name": "Adaptr",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 129,
+        "fields": {
+            "name": "Peloton",
+            "description": ""
+        }
+    },
+    {
+        "model": "platforms.platform",
+        "pk": 130,
+        "fields": {
+            "name": "Sirius XM Pandora",
+            "description": ""
+        }
+    }
+]

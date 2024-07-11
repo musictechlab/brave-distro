@@ -1,0 +1,362 @@
+[
+    {
+        "model": "tracks.track",
+        "pk": 1,
+        "fields": {
+            "title": "Penguasa",
+            "isrc": "IEWNY2454682",
+            "artists": [1],
+            "featured_artists": [],
+            "genres": [1, 2],
+            "iswc": "",
+            "language": "ID",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 2,
+        "fields": {
+            "title": "Song of Freedom",
+            "isrc": "IEWNY2454683",
+            "artists": [2],
+            "featured_artists": [3],
+            "genres": [3, 4],
+            "iswc": "T1234567890",
+            "language": "EN",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 3,
+        "fields": {
+            "title": "Silent Night",
+            "isrc": "IEWNY2454684",
+            "artists": [4],
+            "featured_artists": [],
+            "genres": [5, 6],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 4,
+        "fields": {
+            "title": "Jazz It Up",
+            "isrc": "IEWNY2454685",
+            "artists": [5],
+            "featured_artists": [],
+            "genres": [8],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 5,
+        "fields": {
+            "title": "Rock the Night",
+            "isrc": "IEWNY2454686",
+            "artists": [6],
+            "featured_artists": [1],
+            "genres": [3, 7],
+            "iswc": "T0987654321",
+            "language": "EN",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 1,
+        "fields": {
+            "title": "Penguasa",
+            "isrc": "IEWNY2454682",
+            "artists": [1],
+            "featured_artists": [],
+            "genres": [1, 2],
+            "iswc": "",
+            "language": "ID",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 2,
+        "fields": {
+            "title": "Song of Freedom",
+            "isrc": "IEWNY2454683",
+            "artists": [2],
+            "featured_artists": [3],
+            "genres": [3, 4],
+            "iswc": "T1234567890",
+            "language": "EN",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 3,
+        "fields": {
+            "title": "Silent Night",
+            "isrc": "IEWNY2454684",
+            "artists": [4],
+            "featured_artists": [],
+            "genres": [5, 6],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 4,
+        "fields": {
+            "title": "Jazz It Up",
+            "isrc": "IEWNY2454685",
+            "artists": [5],
+            "featured_artists": [],
+            "genres": [8],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 5,
+        "fields": {
+            "title": "Rock the Night",
+            "isrc": "IEWNY2454686",
+            "artists": [6],
+            "featured_artists": [1],
+            "genres": [3, 7],
+            "iswc": "T0987654321",
+            "language": "EN",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 6,
+        "fields": {
+            "title": "Blues on Fire",
+            "isrc": "IEWNY2454687",
+            "artists": [7],
+            "featured_artists": [],
+            "genres": [7],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 7,
+        "fields": {
+            "title": "Country Roads",
+            "isrc": "IEWNY2454688",
+            "artists": [8],
+            "featured_artists": [],
+            "genres": [10],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 8,
+        "fields": {
+            "title": "Pop Sensation",
+            "isrc": "IEWNY2454689",
+            "artists": [9],
+            "featured_artists": [],
+            "genres": [11],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 9,
+        "fields": {
+            "title": "Reggae Vibes",
+            "isrc": "IEWNY2454690",
+            "artists": [10],
+            "featured_artists": [],
+            "genres": [16],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 10,
+        "fields": {
+            "title": "Electronic Dreams",
+            "isrc": "IEWNY2454691",
+            "artists": [11],
+            "featured_artists": [],
+            "genres": [14],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 11,
+        "fields": {
+            "title": "Classical Symphony",
+            "isrc": "IEWNY2454692",
+            "artists": [12],
+            "featured_artists": [],
+            "genres": [5],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 12,
+        "fields": {
+            "title": "Hip-Hop Hustle",
+            "isrc": "IEWNY2454693",
+            "artists": [13],
+            "featured_artists": [],
+            "genres": [9],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 13,
+        "fields": {
+            "title": "Latin Fiesta",
+            "isrc": "IEWNY2454694",
+            "artists": [14],
+            "featured_artists": [],
+            "genres": [17],
+            "iswc": "",
+            "language": "ES",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 14,
+        "fields": {
+            "title": "Soulful Nights",
+            "isrc": "IEWNY2454695",
+            "artists": [15],
+            "featured_artists": [],
+            "genres": [13],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 15,
+        "fields": {
+            "title": "New Age Calm",
+            "isrc": "IEWNY2454696",
+            "artists": [16],
+            "featured_artists": [],
+            "genres": [43],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 16,
+        "fields": {
+            "title": "Opera Gala",
+            "isrc": "IEWNY2454697",
+            "artists": [17],
+            "featured_artists": [],
+            "genres": [20],
+            "iswc": "",
+            "language": "IT",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 17,
+        "fields": {
+            "title": "Reggaeton Party",
+            "isrc": "IEWNY2454698",
+            "artists": [18],
+            "featured_artists": [],
+            "genres": [24],
+            "iswc": "",
+            "language": "ES",
+            "parental_advisory": "E",
+            "available_for": "D"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 18,
+        "fields": {
+            "title": "Gospel Glory",
+            "isrc": "IEWNY2454699",
+            "artists": [19],
+            "featured_artists": [],
+            "genres": [21],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    },
+    {
+        "model": "tracks.track",
+        "pk": 19,
+        "fields": {
+            "title": "Jazz Classics",
+            "isrc": "IEWNY2454700",
+            "artists": [20],
+            "featured_artists": [],
+            "genres": [8],
+            "iswc": "",
+            "language": "EN",
+            "parental_advisory": "N",
+            "available_for": "S"
+        }
+    }
+]

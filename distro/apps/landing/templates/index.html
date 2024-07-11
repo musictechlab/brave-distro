@@ -1,0 +1,921 @@
+{% extends 'unfold/layouts/skeleton.html' %}
+
+{% load i18n unfold static %}
+
+{% block blockbots %}
+<meta name="robots" content="NONE,NOARCHIVE">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta property="og:url" content="https://distro.bravelab.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brave Distro Framework">
+<meta property="og:title" content="Brave Distro Framework for MusicTech">
+<meta property="og:description" content="Modern Django interface for MusicTech companies">
+<meta name="description" content="Modern Django interface for MusicTech companies">
+
+{% endblock %}
+
+{% block title %}Brave Distro Framework{% endblock %}
+
+{% block extrahead %}
+<link href="{% static 'css/styles.css' %}" rel="preload" as="style">
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+<!-- highlight -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/darcula.min.css"
+    integrity="sha512-GfRggx2Wc+POEPR0asMTNTyNug3rWJ9Jp4wxnHZ5VApMOUJRK4cEaRriXsx5tV1DakKHQWQ2noCbuzFiPJaYqA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E72VTQRVPF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E72VTQRVPF');
+</script>
+{% endblock %}
+
+{% block base %}
+
+<div class="border-b -mb-32 dark:border-gray-800">
+    <div class="bg-radial from-gray-200 to-gray-50 dark:bg-gray-800 dark:from-gray-800 dark:to-gray-950/70">
+        <div class="from-gray-200/60 to-gray-transparent dark:from-gray-900 dark:to-transparent">
+
+
+            <div class="border-b border-gray-200 relative z-40 dark:border-gray-800 lg:px-4"
+                x-data="{ openNavigation: false }">
+                <div class="container mx-auto">
+                    <div class="flex flex-row flex-wrap items-center px-6 lg:px-0">
+                        <div class="flex flex-row items-center">
+                            <a class="flex flex-row font-bold items-center text-gray-900 text-lg dark:text-white"
+                                href="/">
+                                Brave Distro Framework
+                            </a>
+                        </div>
+
+                        <nav class="hidden flex-row gap-12 ml-auto lg:flex">
+
+                            <a href="/#features"
+                                class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6">
+                                <span
+                                    class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                    Features
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                            </a>
+                            <a href="/#installation"
+                                class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6">
+                                <span
+                                    class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                    Installation
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                            </a>
+                            <a href="demo/"
+                                class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6"
+                                target="_blank">
+                                <span
+                                    class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                    Try the demo
+                                </span>
+
+                                <span
+                                    class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                            </a>
+                        </nav>
+
+                        <div class="flex gap-6 items-center ml-auto lg:ml-8 lg:order-3">
+
+
+                            <div class="relative" x-data="{ openTheme: false }">
+                                <span
+                                    class="block cursor-pointer h-[18px] leading-none hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                                    x-on:click="openTheme = !openTheme">
+                                    <span class="material-symbols-outlined leading-none"
+                                        x-text="adminTheme == 'dark' && 'dark_mode' || adminTheme == 'light' && 'light_mode' || 'computer'"></span>
+                                </span>
+
+                                <nav class="absolute bg-white border flex flex-col leading-none overflow-hidden py-1 -right-2 rounded-none shadow-lg text-sm text-gray-500 top-7 w-40 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                                    x-cloak x-show="openTheme" @click.outside="openTheme = false">
+                                    <span
+                                        class="cursor-pointer flex flex-row leading-none mx-1 px-3 py-1.5 rounded-none hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-200"
+                                        x-on:click="adminTheme = 'dark'"
+                                        x-bind:class="adminTheme == 'dark' && 'text-green-600 dark:text-green-600 dark:hover:!text-green-600 hover:!text-green-600'">
+                                        <span class="material-symbols-outlined mr-2">dark_mode</span>
+                                        <span class="leading-none self-center">Dark</span>
+                                    </span>
+
+                                    <span
+                                        class="cursor-pointer flex flex-row mx-1 px-3 py-1.5 rounded-none hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-200"
+                                        x-on:click="adminTheme = 'light'"
+                                        x-bind:class="adminTheme == 'light'  && 'text-green-600 dark:text-green-600 dark:hover:!text-green-600 hover:!text-green-600'">
+                                        <span class="material-symbols-outlined mr-2">light_mode</span>
+                                        <span class="leading-none self-center">Light</span>
+                                    </span>
+
+                                    <span
+                                        class="cursor-pointer flex flex-row mx-1 px-3 py-1.5 rounded-none hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-200"
+                                        x-on:click="adminTheme = 'auto'"
+                                        x-bind:class="adminTheme == 'auto' && 'text-green-600 dark:text-green-600 dark:hover:!text-green-600 hover:!text-green-600'">
+                                        <span class="material-symbols-outlined mr-2">computer</span>
+                                        <span class="leading-none self-center">System</span>
+                                    </span>
+                                </nav>
+                            </div>
+
+
+                            <a href="https://github.com/bravelab/brave-distro" target="_blank"
+                                class="hover:text-gray-700 dark:hover:text-gray-200" title="GitHub repository">
+                                <svg viewBox="0 0 438.549 438.549" class="h-4 w-4">
+                                    <path fill="currentColor"
+                                        d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <span
+                                class="bg-gray-100 border-l border-gray-200 cursor-pointer flex items-center justify-center -mr-6 p-6 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-800 lg:hidden"
+                                x-on:click="openNavigation = true"
+                                x-bind:class="openNavigation == true && 'bg-gray-200 border-l-gray-100 dark:border-l-gray-800'">
+                                <span class="material-symbols-outlined text-gray-700 dark:text-white">menu</span>
+                            </span>
+                        </div>
+
+                        <div class="absolute bg-gray-200 flex items-center left-0 px-6 right-0 top-16 dark:bg-gray-800 lg:hidden"
+                            x-show="openNavigation" x-on:keydown.escape.window="openNavigation = false"
+                            x-on:click.outside="openNavigation = false">
+                            <nav class="flex flex-col text-base w-full">
+
+                                <a href="/#features"
+                                    class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6">
+                                    <span
+                                        class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                        Features
+                                    </span>
+
+                                    <span
+                                        class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                                </a>
+                                <a href="/installation/"
+                                    class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6">
+                                    <span
+                                        class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                        Installation
+                                    </span>
+
+                                    <span
+                                        class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                                </a>
+                                <a href="/demo"
+                                    class="border-b border-gray-300 flex flex-grow flex-row group items-center leading-[18px] py-4 hover:text-purple-700 last:border-b-0 dark:border-gray-600 lg:border-0 lg:py-6"
+                                    target="_blank">
+                                    <span
+                                        class="text-gray-700 group-hover:text-purple-700 dark:text-gray-300 group-hover:dark:text-white">
+                                        Try the demo
+                                    </span>
+
+                                    <span
+                                        class="material-symbols-outlined ml-auto relative right-0 text-lg transition-all group-hover:-right-1 group-hover:dark:text-white lg:hidden">arrow_forward</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container max-w-7xl mx-auto">
+                <div class="pt-32 pb-48 lg:pb-64 px-4">
+                    <div class="flex flex-row max-auto justify-center">
+
+
+                        <div
+                            class="bg-gray-50 border border-gray-200 inline-block items-center mb-4 overflow-hidden text-gray-700 text-sm rounded-none-full shadow-sm lg:flex-row dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200">
+                            <div class="flex items-center">
+                                <p class="px-4 py-1.5">
+                                    Added <a class="underline" target="_blank"
+                                        href="https://github.com/bravelab/brave-distro">django-unhold</a>
+                                    theme
+                                </p>
+
+                                <a href="https://github.com/bravelab/brave-distro" target="_blank"
+                                    title="django-guardinan installation guide"
+                                    class="border-l bg-gray-100 font-medium px-4 py-1.5 text-gray-700 dark:bg-transparent dark:border-gray-700 dark:text-white">
+                                    Read docs
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1
+                        class="font-semibold leading-snug max-w-4xl mb-4 mx-auto text-2xl text-center text-gray-900 tracking-tight lg:leading-normal lg:text-4xl dark:text-white">
+
+                        <div>Develop your own music distribution platform.</div>
+                        Open-source<span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-600 dark:from-purple-600 dark:to-green-400">&nbsp;Brave&nbsp;Distro&nbsp;Framework</span>
+                        framework
+
+                    </h1>
+
+                    <p
+                        class="leading-loose mb-12 mx-auto max-w-3xl text-base text-center lg:leading-relaxed lg:text-xl">
+                        Created for MusicTech industry to help compose stunning industry administration panels.
+                    </p>
+
+                    <div class="flex flex-col gap-6 items-center justify-center md:flex-row">
+                        <a href="/demo"
+                            class="bg-green-600 border border-transparent flex flex-row font-medium group items-center px-5 py-2 rounded-none justify-center text-sm text-gray-900 w-full md:w-auto"
+                            target="_blank">
+                            Try the demo
+                            <i
+                                class="material-symbols-outlined ml-2 relative right-0 text-lg transition-all group-hover:-right-1">arrow_forward</i>
+                        </a>
+
+                        <a href="https://github.com/bravelab/distro"
+                            class="bg-gray-900 flex flex-row font-medium items-center px-5 py-3 rounded-none justify-center text-sm text-white w-full md:w-auto lg:mr-3 dark:bg-white dark:text-gray-900"
+                            target="_blank">
+                            <span class="mr-2">
+                                <svg viewBox="0 0 438.549 438.549" class="h-4 w-4">
+                                    <path fill="currentColor"
+                                        d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                            View on Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="px-4">
+    <div class="container mx-auto relative z-50">
+        <div
+            class="bg-white overflow-hidden outline outline-4 outline-gray-400/10 md:border md:rounded-none-lg dark:bg-gray-900 dark:text-gray-400 dark:border-gray-800 dark:outline-gray-700/50">
+            <img srcset="{% static 'images/distro.bravelab.io-dashboard-light.png' %} 1024w, {% static 'images/distro.bravelab.io-dashboard-light.png' %} 2400w"
+                sizes="(max-width: 1024px) 768px, 2400px" class="block dark:hidden" alt="Light mode"
+                width="2400" height="2171" />
+
+            <img srcset="{% static 'images/distro.bravelab.io-dashboard-dark.png' %} 1024w, {% static 'images/distro.bravelab.io-dashboard-dark.png' %} 2400w"
+                sizes="(max-width: 1024px) 1024px, 2400px" src="{% static 'images/distro.bravelab.io-dashboard-dark.png' %}"
+                class="hidden dark:block" alt="Dark mode" loading="lazy" width="2400" height="2171" />
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="border-b px-4 dark:border-gray-800">
+    <div class="container mx-auto max-w-7xl">
+        <div class="pb-24 pt-16 lg:pb-32">
+            <div class="flex flex-col gap-12 lg:flex-row lg:gap-8">
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-200 h-px mb-6 dark:bg-gray-700">
+                        <div class="bg-green-600 h-px w-1/2"></div>
+                    </div>
+
+                    <h2 class="font-medium leading-relaxed mb-4 text-gray-700 text-base dark:text-white">
+                        Django Inside
+                    </h2>
+
+                    <p class="leading-extra-relaxed mb-4 text-base">
+                        With Django Inside, our platform benefits from a framework designed for reliability, security,
+                        and scalability.
+                        Django is trusted by some of the world’s largest companies and organizations, ensuring your
+                        project is built on a solid foundation.
+                    </p>
+
+                    <a href="https://www.djangoproject.com/"
+                        class="flex flex-row items-center ml-auto text-base text-green-600" target="_blank">
+                        View project
+                        <i class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</i>
+                    </a>
+
+                </div>
+
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-200 h-px mb-6 dark:bg-gray-700">
+                        <div class="bg-green-600 h-px w-1/2"></div>
+                    </div>
+
+                    <h2 class="font-medium leading-relaxed mb-4 text-gray-700 text-base dark:text-white">
+                        Unfold Admin
+                    </h2>
+
+                    <p class="leading-extra-relaxed mb-4 text-base">
+                        Unfold Admin offers a clean, intuitive interface that makes managing your application a breeze.
+                        Its user-friendly design ensures that both technical and non-technical users can navigate and
+                        operate the admin panel with ease.
+                    </p>
+
+                    <a href="https://unfoldadmin.com/"
+                        class="flex flex-row items-center ml-auto text-base text-green-600" target="_blank">
+                        View project
+                        <i class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</i>
+                    </a>
+
+                </div>
+
+                <div class="lg:w-1/3">
+                    <div class="bg-gray-200 h-px mb-6 dark:bg-gray-700">
+                        <div class="bg-green-600 h-px w-1/2"></div>
+                    </div>
+
+                    <h2 class="font-medium leading-relaxed mb-4 text-gray-700 text-base dark:text-white">
+                        TailwindCSS
+                    </h2>
+
+                    <p class="leading-extra-relaxed mb-4 text-base">
+                        TailwindCSS is highly customizable, allowing you to tailor the design system to fit your brand
+                        perfectly. Modify the default theme, extend the design system with custom utilities with ease
+                        and precision.
+                        <br /><br />
+                    </p>
+
+                    <a href="https://tailwindcss.com/"
+                        class="flex flex-row items-center ml-auto text-base text-green-600" target="_blank">
+                        View project
+                        <i class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="px-4">
+    <div class="container mx-auto max-w-7xl">
+
+        <div class="border-b px-4 dark:border-gray-800 py-24 lg:py-32" id="platforms">
+            <h2
+                class="font-medium max-w-3xl mb-4 mx-auto text-center text-xl text-gray-700 lg:text-2xl dark:text-white">
+                Platforms
+            </h2>
+
+            <p class="leading-loose max-w-3xl mx-auto text-center text-base lg:text-lg lg:leading-relaxed">
+                
+                {% load platforms_tags %}
+                <ul class="flex flex-wrap space-x-4">
+                    {% get_all_platforms as platforms %}
+                    {% for platform in platforms %}
+                        <li class="flex-1 p-4 m-2 rounded-none">
+                            <strong>{{ platform.name }}</strong>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="border-b px-4 dark:border-gray-800 py-24 lg:py-32" id="installation">
+            <h2
+                class="font-medium max-w-3xl mb-4 mx-auto text-center text-xl text-gray-700 lg:text-2xl dark:text-white">
+                Intallation
+            </h2>
+
+            <p class="leading-loose max-w-3xl mx-auto text-center text-base lg:text-lg lg:leading-relaxed">
+            <pre>
+                    <code class="language-bash">
+                        git clone https://github.com/bravelab/brave-distro.git
+                        cd brave-distro
+                        virtualenv venv
+                        source venv/bin/activate
+                        pip install -r requirements.txt
+                        export DEVELOPMENT_MODE=True
+                        python manage.py runserver
+                    </code>
+                </pre>
+            </p>
+        </div>
+
+
+        <div class="border-b px-4 dark:border-gray-800">
+            <div class="container mx-auto max-w-7xl" id="features">
+                <!-- <div class="py-24 lg:py-32">
+                    <h2
+                        class="font-medium max-w-3xl mb-4 mx-auto text-center text-xl text-gray-700 lg:text-2xl dark:text-white">
+                        Comparison
+                    </h2>
+
+                    <p class="leading-loose max-w-3xl mx-auto text-center text-base lg:text-lg lg:leading-relaxed">
+                        ... Soft 1 ...
+                        ... Soft 2 ...
+                        ... Soft 23 ...
+                    </p>
+                </div> -->
+
+
+                <div class="px-4">
+                    <div class="container mx-auto max-w-7xl" id="features">
+                        <div class="py-24 lg:py-32">
+                            <h2
+                                class="font-medium max-w-3xl mb-4 mx-auto text-center text-xl text-gray-700 lg:text-2xl dark:text-white">
+                                Features boosting your company productivity
+                            </h2>
+
+                            <p
+                                class="leading-loose max-w-3xl mx-auto text-center text-base lg:text-lg lg:leading-relaxed">
+                                Carefully crafted modules already included in the framewor application.
+                            </p>
+                        </div>
+
+                        <div class="gap-8 grid md:grid-cols-2 lg:grid-cols-3">
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">dock_to_right</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Catalog management
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Catalog management helps organize and maintain a database of music tracks,
+                                        albums,
+                                        and artist information to ensure efficient distribution and discoverability
+                                        across various digital channels.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">web_traffic</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Beatutifull UI
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        A beautiful UI enhances user experience by making interactions more intuitive
+                                        and enjoyable, leading to increased user satisfaction and engagement.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">filter_list</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Artist management
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Artist managementinvolves handling the administrative and promotional tasks
+                                        necessary
+                                        for an artist’s music to reach a wide audience
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">filter_alt</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Django powered
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Django ensures a scalable and secure environment, providing tools for catalog
+                                        and artist management, all while delivering a seamless user experience through
+                                        Django’s powerful admin interface and customizable features.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">wysiwyg</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Easy to customise
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Brave Distro Framework is easy to customize, allowing developers to tailor the
+                                        framework to meet specific needs
+                                        through its modular architecture and extensive library of reusable components.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">dark_mode</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Dark mode
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Dark mode offers several advantages, including reduced eye strain and fatigue in
+                                        low-light environments,
+                                        which can lead to a more comfortable user experience.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">dashboard</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Dashboard support
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Dashboard provides users with a centralized interface to monitor and manage
+                                        various aspects of the platform.
+                                        It offers insights, visualizations, and easy access to key metrics and controls,
+                                        enabling efficient decision-making and streamlined operations.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">tab_group</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Ready to use
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Ready-to-use tools offer immediate functionality out of the box,
+                                        saving time and effort on setup and configuration. This convenience allows users
+                                        to quickly
+                                        integrate and deploy the solution by focusing on usage rather than development.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">bookmark</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Environment label
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Environment labeling refers to the practice of tagging different environments
+                                        (such as development, staging,
+                                        and production) within a software application. Thisensures that code changes and
+                                        updates are appropriately managed and tested before being released to end users.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">palette</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Color schemes
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Effective color schemes enhance visual appeal, improve user experience, and
+                                        ensure readability and
+                                        accessibility by creating a harmonious and aesthetically pleasing visual
+                                        environment.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">smartphone</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Responsive design
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Responsive design enhances user experience by providing optimal viewing and
+                                        interaction,
+                                        regardless of whether the user is on a desktop, tablet, or smartphone, through
+                                        flexible layouts.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-gray-50 flex flex-row gap-4 group px-4 py-5 rounded-none transition-all dark:bg-white/[.02]">
+                                <div>
+                                    <div
+                                        class="bg-white border flex items-center justify-center rounded-none shadow-sm text-gray-700 h-9 w-9 dark:text-white dark:bg-gray-800 dark:border-white/[.08]">
+                                        <i class="material-symbols-outlined text-green-600">label</i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-1 font-medium leading-9 text-base text-gray-700 dark:text-white">
+                                        Dedicated database structure
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed text-base">
+                                        Ready to use database structure for a music distribution platform involves
+                                        creating tables
+                                        for key entities such as artists, albums, tracks, and users, each with
+                                        appropriate attributes.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <div class="container mx-auto max-w-7xl py-16 lg:py-32">
+                        <div class="border-t dark:border-gray-800">
+                            <div class="py-24 lg:py-32">
+                                <h2
+                                    class="font-medium max-w-3xl mb-4 mx-auto text-center text-xl text-gray-700 lg:text-2xl dark:text-white">
+                                    Interested in discovering different source code?
+                                </h2>
+
+                                <p
+                                    class="leading-loose max-w-3xl mx-auto text-center text-base lg:text-lg lg:leading-relaxed">
+                                    We prepared a set of repositories providing some examples and development
+                                    practises when it comes to music tech 3rd-party APIs and Platforms
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col gap-8 lg:flex-row">
+                                <div class="lg:w-1/2">
+                                    <div class="bg-gray-200 h-px mb-6 dark:bg-gray-700">
+                                        <div class="bg-green-600 h-px w-1/2"></div>
+                                    </div>
+
+                                    <h3 class="mb-4 font-medium text-base text-gray-700 dark:text-white">
+                                        Ratemate
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed mb-4 text-base">
+                                        Ratemate is an automated proof of concept tool designed for the analysis of
+                                        audio tracks. It proficiently extracts lyrics from the provided audio and
+                                        subsequently conducts evaluations based on the PEGI (Pan European Game
+                                        Information) scale.
+                                    </p>
+
+                                    <a href="https://github.com/bravelab/ratemate"
+                                        class="flex flex-row items-center ml-auto text-base text-green-600"
+                                        target="_blank">
+                                        Check project on GitHub
+
+                                        <i class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</i>
+                                    </a>
+
+                                </div>
+
+                                <div class="lg:w-1/2">
+                                    <div class="bg-gray-200 h-px mb-6 dark:bg-gray-700">
+                                        <div class="bg-green-600 h-px w-1/2"></div>
+                                    </div>
+
+                                    <h3 class="mb-4 font-medium text-base text-gray-700 dark:text-white">
+                                        Audiostack API integration examples
+                                    </h3>
+
+                                    <p class="leading-extra-relaxed mb-4 text-base">
+                                        AudioStack is a leading AI-driven audio production platform designed to
+                                        streamline and enhance audio creation processes for enterprises.
+                                        We created a simple script which shows how we can use their
+                                        platfrom.<br /><br />
+                                    </p>
+
+                                    <a href="https://github.com/bravelab/audiostack"
+                                        class="flex flex-row items-center ml-auto text-base text-green-600"
+                                        target="_blank">
+                                        Check project on GitHub
+
+                                        <i class="material-symbols-outlined ml-1 text-lg">arrow_right_alt</i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 mt-auto px-8 dark:bg-gray-950" id="contact">
+                    <div class="container mx-auto max-w-7xl" id="features">
+                        <div class="flex flex-col justify-center py-12 lg:flex-row">
+                            <div class="flex-grow py-12 lg:w-1/2">
+                                <h2
+                                    class="font-medium max-w-3xl mb-4 text-xl text-gray-700 lg:text-2xl dark:text-white">
+                                    Let's work together
+                                </h2>
+
+                                <p class="leading-loose max-w-3xl mb-6 text-base lg:text-lg lg:leading-relaxed">
+
+                                    Did you decide to start using Brave Distro Framework in your company but you need
+                                    help with
+                                    integration and development? Feel free to get in touch for consulting or development
+                                    services.
+
+                                </p>
+
+                                <ul class="flex flex-col gap-4 mb-6 text-base">
+                                    <li class="flex flex-row">
+                                        <span class="leading-6 material-symbols-outlined mr-2 text-2xl text-green-600">
+                                            verified
+                                        </span>
+
+                                        <span>
+                                            Save time and focus on what matters: building product
+                                        </span>
+                                    </li>
+
+                                    <li class="flex flex-row">
+                                        <span class="leading-6 material-symbols-outlined mr-2 text-2xl text-green-600">
+                                            verified
+                                        </span>
+
+                                        <span>
+                                            Get instant access to the know-how pool and experience
+                                        </span>
+                                    </li>
+
+                                    <li class="flex flex-row">
+                                        <span class="leading-6 material-symbols-outlined mr-2 text-2xl text-green-600">
+                                            verified
+                                        </span>
+
+                                        <span>
+                                            Supercharge your development processes and quality of application
+                                        </span>
+                                    </li>
+
+                                    <li class="flex flex-row">
+                                        <span class="leading-6 material-symbols-outlined mr-2 text-2xl text-green-600">
+                                            verified
+                                        </span>
+
+                                        <span>
+                                            Incorporate custom music applications into your company
+                                        </span>
+                                    </li>
+                                </ul>
+
+                                <!-- <p class="leading-relaxed text-base">
+                                    * The cost of service starts from <strong
+                                        class="font-medium text-gray-900 dark:text-white">.. EUR</strong>.
+                                </p> -->
+                            </div>
+
+                            <div class="bg-gray-200 hidden mx-12 w-px dark:bg-gray-800 lg:block">
+                            </div>
+
+                            <div class="bg-gray-200 block h-px w-full dark:bg-gray-800 lg:hidden">
+                            </div>
+
+                            <div class="flex-grow py-12 lg:w-1/2">
+                                {% load contact_tags %}
+                                {% render_contact_form %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-4">
+                    <div class="container max-w-7xl mx-auto">
+                        <div class="py-12 text-base dark:border-gray-800">
+                            &copy; 2024 Created by <a href="https://bravelab.io"
+                                class="text-green-600 underline">bravelab.io</a>. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+
+                <script defer src="{% static 'js/htmx.js' %}" nonce="E54+SFTjiENNgewRq6nbFQ=="></script>
+                <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+                <script src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

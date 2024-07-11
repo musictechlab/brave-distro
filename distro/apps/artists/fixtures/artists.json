@@ -1,0 +1,362 @@
+[
+    {
+        "model": "artists.artist",
+        "pk": 1,
+        "fields": {
+            "name": "Taylor Swift",
+            "birth_date": "1989-12-13",
+            "genre": "Pop",
+            "ipi_code": "12345678901",
+            "isni_code": "000000011022438X",
+            "pro": "BMI",
+            "recording_label": 1,
+            "country": "US",
+            "city": "Nashville",
+            "website": "https://www.taylorswift.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 2,
+        "fields": {
+            "name": "Ed Sheeran",
+            "birth_date": "1991-02-17",
+            "genre": "Pop",
+            "ipi_code": "23456789012",
+            "isni_code": "000000012146438X",
+            "pro": "PRS",
+            "recording_label": 2,
+            "country": "GB",
+            "city": "London",
+            "website": "https://www.edsheeran.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 3,
+        "fields": {
+            "name": "Beyoncé",
+            "birth_date": "1981-09-04",
+            "genre": "R&B",
+            "ipi_code": "34567890123",
+            "isni_code": "000000010898487X",
+            "pro": "ASCAP",
+            "recording_label": 3,
+            "country": "US",
+            "city": "Houston",
+            "website": "https://www.beyonce.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 4,
+        "fields": {
+            "name": "Adele",
+            "birth_date": "1988-05-05",
+            "genre": "Soul",
+            "ipi_code": "45678901234",
+            "isni_code": "000000011179486X",
+            "pro": "PRS",
+            "recording_label": 4,
+            "country": "GB",
+            "city": "London",
+            "website": "https://www.adele.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 5,
+        "fields": {
+            "name": "Drake",
+            "birth_date": "1986-10-24",
+            "genre": "Hip-Hop",
+            "ipi_code": "56789012345",
+            "isni_code": "000000012149487X",
+            "pro": "BMI",
+            "recording_label": 5,
+            "country": "CA",
+            "city": "Toronto",
+            "website": "https://www.drakeofficial.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 6,
+        "fields": {
+            "name": "Justin Bieber",
+            "birth_date": "1994-03-01",
+            "genre": "Pop",
+            "ipi_code": "67890123456",
+            "isni_code": "000000012155487X",
+            "pro": "SOCAN",
+            "recording_label": 6,
+            "country": "CA",
+            "city": "Stratford",
+            "website": "https://www.justinbiebermusic.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 7,
+        "fields": {
+            "name": "Rihanna",
+            "birth_date": "1988-02-20",
+            "genre": "Pop",
+            "ipi_code": "78901234567",
+            "isni_code": "000000012169487X",
+            "pro": "BMI",
+            "recording_label": 7,
+            "country": "BB",
+            "city": "Saint Michael",
+            "website": "https://www.rihanna.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 8,
+        "fields": {
+            "name": "Bruno Mars",
+            "birth_date": "1985-10-08",
+            "genre": "Pop",
+            "ipi_code": "89012345678",
+            "isni_code": "000000012173487X",
+            "pro": "ASCAP",
+            "recording_label": 8,
+            "country": "US",
+            "city": "Honolulu",
+            "website": "https://www.brunomars.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 9,
+        "fields": {
+            "name": "Billie Eilish",
+            "birth_date": "2001-12-18",
+            "genre": "Pop",
+            "ipi_code": "90123456789",
+            "isni_code": "000000012177487X",
+            "pro": "BMI",
+            "recording_label": 9,
+            "country": "US",
+            "city": "Los Angeles",
+            "website": "https://www.billieeilish.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 10,
+        "fields": {
+            "name": "Kanye West",
+            "birth_date": "1977-06-08",
+            "genre": "Hip-Hop",
+            "ipi_code": "01234567890",
+            "isni_code": "000000012184487X",
+            "pro": "BMI",
+            "recording_label": 10,
+            "country": "US",
+            "city": "Atlanta",
+            "website": "https://www.kanyewest.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 11,
+        "fields": {
+            "name": "Lady Gaga",
+            "birth_date": "1986-03-28",
+            "genre": "Pop",
+            "ipi_code": "12345678902",
+            "isni_code": "000000012188487X",
+            "pro": "ASCAP",
+            "recording_label": 11,
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.ladygaga.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 12,
+        "fields": {
+            "name": "The Weeknd",
+            "birth_date": "1990-02-16",
+            "genre": "R&B",
+            "ipi_code": "23456789013",
+            "isni_code": "000000012193487X",
+            "pro": "SOCAN",
+            "recording_label": 12,
+            "country": "CA",
+            "city": "Toronto",
+            "website": "https://www.theweeknd.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 13,
+        "fields": {
+            "name": "Shawn Mendes",
+            "birth_date": "1998-08-08",
+            "genre": "Pop",
+            "ipi_code": "34567890124",
+            "isni_code": "000000012199487X",
+            "pro": "SOCAN",
+            "recording_label": 13,
+            "country": "CA",
+            "city": "Pickering",
+            "website": "https://www.shawnmendesofficial.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 14,
+        "fields": {
+            "name": "Ariana Grande",
+            "birth_date": "1993-06-26",
+            "genre": "Pop",
+            "ipi_code": "45678901235",
+            "isni_code": "000000012202487X",
+            "pro": "ASCAP",
+            "recording_label": 14,
+            "country": "US",
+            "city": "Boca Raton",
+            "website": "https://www.arianagrande.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 15,
+        "fields": {
+            "name": "Post Malone",
+            "birth_date": "1995-07-04",
+            "genre": "Hip-Hop",
+            "ipi_code": "56789012365",
+            "isni_code": "000000012207487X",
+            "pro": "BMI",
+            "recording_label": 15,
+            "country": "US",
+            "city": "Syracuse",
+            "website": "https://www.postmalone.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 16,
+        "fields": {
+            "name": "Cardi B",
+            "birth_date": "1992-10-11",
+            "genre": "Hip-Hop",
+            "ipi_code": "67890124456",
+            "isni_code": "000000012213487X",
+            "pro": "ASCAP",
+            "recording_label": 16,
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.iamcardib.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 17,
+        "fields": {
+            "name": "Harry Styles",
+            "birth_date": "1994-02-01",
+            "genre": "Pop",
+            "ipi_code": "18901234567",
+            "isni_code": "000000012218487X",
+            "pro": "PRS",
+            "recording_label": 17,
+            "country": "GB",
+            "city": "Redditch",
+            "website": "https://www.hstyles.co.uk",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 18,
+        "fields": {
+            "name": "Dua Lipa",
+            "birth_date": "1995-08-22",
+            "genre": "Pop",
+            "ipi_code": "81012345678",
+            "isni_code": "000000012224487X",
+            "pro": "PRS",
+            "recording_label": 18,
+            "country": "GB",
+            "city": "London",
+            "website": "https://www.dualipa.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 19,
+        "fields": {
+            "name": "Katy Perry",
+            "birth_date": "1984-10-25",
+            "genre": "Pop",
+            "ipi_code": "90123456781",
+            "isni_code": "000000012229487X",
+            "pro": "ASCAP",
+            "recording_label": 19,
+            "country": "US",
+            "city": "Santa Barbara",
+            "website": "https://www.katyperry.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "artists.artist",
+        "pk": 20,
+        "fields": {
+            "name": "Selena Gomez",
+            "birth_date": "1992-07-22",
+            "genre": "Pop",
+            "ipi_code": "01234567810",
+            "isni_code": "000000012234487X",
+            "pro": "ASCAP",
+            "recording_label": 20,
+            "country": "US",
+            "city": "Grand Prairie",
+            "website": "https://www.selenagomez.com",
+            "email": "",
+            "phone": ""
+        }
+    }
+]

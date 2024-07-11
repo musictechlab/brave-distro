@@ -1,0 +1,352 @@
+[
+    {
+        "model": "genres.genre",
+        "pk": 1,
+        "fields": {
+            "name": "Alternative"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 2,
+        "fields": {
+            "name": "Alternative Rock"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 3,
+        "fields": {
+            "name": "Rock"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 4,
+        "fields": {
+            "name": "Punk"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 5,
+        "fields": {
+            "name": "Classical"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 6,
+        "fields": {
+            "name": "Holiday"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 7,
+        "fields": {
+            "name": "Blues"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 8,
+        "fields": {
+            "name": "Jazz"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 9,
+        "fields": {
+            "name": "Hip-Hop/Rap"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 10,
+        "fields": {
+            "name": "Country"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 11,
+        "fields": {
+            "name": "Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 12,
+        "fields": {
+            "name": "R&B"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 13,
+        "fields": {
+            "name": "Soul"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 14,
+        "fields": {
+            "name": "Electronic"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 15,
+        "fields": {
+            "name": "Dance"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 16,
+        "fields": {
+            "name": "Reggae"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 17,
+        "fields": {
+            "name": "Latin"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 18,
+        "fields": {
+            "name": "Salsa"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 19,
+        "fields": {
+            "name": "Metal"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 20,
+        "fields": {
+            "name": "Opera"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 21,
+        "fields": {
+            "name": "Gospel"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 22,
+        "fields": {
+            "name": "Folk"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 23,
+        "fields": {
+            "name": "World"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 24,
+        "fields": {
+            "name": "Reggaeton"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 25,
+        "fields": {
+            "name": "Soundtrack"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 26,
+        "fields": {
+            "name": "Spoken Word"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 27,
+        "fields": {
+            "name": "Anime"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 28,
+        "fields": {
+            "name": "Comedy"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 29,
+        "fields": {
+            "name": "Children's"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 30,
+        "fields": {
+            "name": "Christian"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 31,
+        "fields": {
+            "name": "Inspirational"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 32,
+        "fields": {
+            "name": "Enka"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 33,
+        "fields": {
+            "name": "Experimental"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 34,
+        "fields": {
+            "name": "Fitness & Workout"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 35,
+        "fields": {
+            "name": "French Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 36,
+        "fields": {
+            "name": "German Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 37,
+        "fields": {
+            "name": "K-Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 38,
+        "fields": {
+            "name": "J-Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 39,
+        "fields": {
+            "name": "C-Pop"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 40,
+        "fields": {
+            "name": "Bossa Nova"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 41,
+        "fields": {
+            "name": "Big Band"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 42,
+        "fields": {
+            "name": "Ballads"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 43,
+        "fields": {
+            "name": "New Age"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 44,
+        "fields": {
+            "name": "Opera"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 45,
+        "fields": {
+            "name": "Chutney"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 46,
+        "fields": {
+            "name": "Dub"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 47,
+        "fields": {
+            "name": "Kuduro"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 48,
+        "fields": {
+            "name": "Soukous"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 49,
+        "fields": {
+            "name": "Zouglou"
+        }
+    },
+    {
+        "model": "genres.genre",
+        "pk": 50,
+        "fields": {
+            "name": "Neo-Soul"
+        }
+    }
+]

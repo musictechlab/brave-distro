@@ -1,0 +1,114 @@
+[
+    {
+        "model": "participants.participantrole",
+        "pk": 1,
+        "fields": {
+            "name": "Artist"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 2,
+        "fields": {
+            "name": "Drums"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 3,
+        "fields": {
+            "name": "Composer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 4,
+        "fields": {
+            "name": "Author"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 5,
+        "fields": {
+            "name": "Vocal"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 6,
+        "fields": {
+            "name": "Guitar"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 7,
+        "fields": {
+            "name": "Producer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 8,
+        "fields": {
+            "name": "Mixing Engineer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 9,
+        "fields": {
+            "name": "Recording Engineer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 10,
+        "fields": {
+            "name": "Mastering Engineer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 11,
+        "fields": {
+            "name": "Bass"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 12,
+        "fields": {
+            "name": "Keyboards"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 13,
+        "fields": {
+            "name": "Executive Producer"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 14,
+        "fields": {
+            "name": "Label"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 15,
+        "fields": {
+            "name": "Publisher"
+        }
+    },
+    {
+        "model": "participants.participantrole",
+        "pk": 16,
+        "fields": {
+            "name": "Contributor"
+        }
+    }
+]

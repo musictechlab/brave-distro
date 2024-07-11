@@ -1,0 +1,91 @@
+[
+    {
+        "model": "lyrics.lyrics",
+        "pk": 1,
+        "fields": {
+            "track": 1,
+            "content": "Verse 1: The night is dark, the world is quiet...\nChorus: We are the rulers of the night...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 2,
+        "fields": {
+            "track": 2,
+            "content": "Verse 1: Freedom calls, and we must answer...\nChorus: Singing the song of freedom...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 3,
+        "fields": {
+            "track": 3,
+            "content": "Silent night, holy night...\nAll is calm, all is bright...",
+            "language": "EN"
+        }
+    }, {
+        "model": "lyrics.lyrics",
+        "pk": 4,
+        "fields": {
+            "track": 4,
+            "content": "Jazz it up, let the music play...\nFeel the rhythm, all night and day...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 5,
+        "fields": {
+            "track": 5,
+            "content": "Rock the night, we are the stars...\nShining bright, with our guitars...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 6,
+        "fields": {
+            "track": 6,
+            "content": "Blues on fire, feel the heat...\nBurning desire, can't be beat...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 7,
+        "fields": {
+            "track": 7,
+            "content": "Country roads, take me home...\nTo the place, I belong...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 8,
+        "fields": {
+            "track": 8,
+            "content": "Pop sensation, feel the groove...\nDance all night, let your body move...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 9,
+        "fields": {
+            "track": 9,
+            "content": "Reggae vibes, feel the beat...\nMove your body, to the heat...",
+            "language": "EN"
+        }
+    },
+    {
+        "model": "lyrics.lyrics",
+        "pk": 10,
+        "fields": {
+            "track": 10,
+            "content": "Electronic dreams, in the night...\nFeel the pulse, feel the light...",
+            "language": "EN"
+        }
+    }
+]

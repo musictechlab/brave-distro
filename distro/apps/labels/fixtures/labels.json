@@ -1,0 +1,282 @@
+[
+    {
+        "model": "labels.label",
+        "pk": 1,
+        "fields": {
+            "name": "Universal Music Group",
+            "founded_date": "1934-09-30",
+            "founder": "Lucian Grainge",
+            "country": "US",
+            "city": "Santa Monica",
+            "website": "https://www.universalmusic.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 2,
+        "fields": {
+            "name": "Sony Music Entertainment",
+            "founded_date": "1929-03-01",
+            "founder": "Rob Stringer",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.sonymusic.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 3,
+        "fields": {
+            "name": "Warner Music Group",
+            "founded_date": "1958-11-21",
+            "founder": "Steve Cooper",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.wmg.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 4,
+        "fields": {
+            "name": "Atlantic Records",
+            "founded_date": "1947-10-01",
+            "founder": "Ahmet Ertegun",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.atlanticrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 5,
+        "fields": {
+            "name": "Capitol Records",
+            "founded_date": "1942-04-09",
+            "founder": "Johnny Mercer",
+            "country": "US",
+            "city": "Los Angeles",
+            "website": "https://www.capitolrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 6,
+        "fields": {
+            "name": "Island Records",
+            "founded_date": "1959-05-22",
+            "founder": "Chris Blackwell",
+            "country": "UK",
+            "city": "London",
+            "website": "https://www.islandrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 7,
+        "fields": {
+            "name": "Columbia Records",
+            "founded_date": "1887-01-15",
+            "founder": "Edward D. Easton",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.columbiarecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 8,
+        "fields": {
+            "name": "RCA Records",
+            "founded_date": "1901-01-01",
+            "founder": "Emile Berliner",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.rcarecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 9,
+        "fields": {
+            "name": "Def Jam Recordings",
+            "founded_date": "1983-01-01",
+            "founder": "Rick Rubin",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.defjam.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 10,
+        "fields": {
+            "name": "Interscope Records",
+            "founded_date": "1990-01-01",
+            "founder": "Jimmy Iovine",
+            "country": "US",
+            "city": "Santa Monica",
+            "website": "https://www.interscope.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 11,
+        "fields": {
+            "name": "EMI Records",
+            "founded_date": "1972-01-01",
+            "founder": "EMI Group",
+            "country": "UK",
+            "city": "London",
+            "website": "https://www.emirecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 12,
+        "fields": {
+            "name": "Motown Records",
+            "founded_date": "1959-01-12",
+            "founder": "Berry Gordy",
+            "country": "US",
+            "city": "Detroit",
+            "website": "https://www.motownrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 13,
+        "fields": {
+            "name": "Virgin Records",
+            "founded_date": "1972-01-01",
+            "founder": "Richard Branson",
+            "country": "UK",
+            "city": "London",
+            "website": "https://www.virginrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 14,
+        "fields": {
+            "name": "Republic Records",
+            "founded_date": "1995-01-01",
+            "founder": "Monte Lipman",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.republicrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 15,
+        "fields": {
+            "name": "Atlantic Records UK",
+            "founded_date": "1967-01-01",
+            "founder": "Ahmet Ertegun",
+            "country": "UK",
+            "city": "London",
+            "website": "https://www.atlanticrecords.co.uk",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 16,
+        "fields": {
+            "name": "Epic Records",
+            "founded_date": "1953-01-01",
+            "founder": "Columbia Records",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.epicrecords.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 17,
+        "fields": {
+            "name": "Parlophone",
+            "founded_date": "1923-01-01",
+            "founder": "Carl Lindström Company",
+            "country": "UK",
+            "city": "London",
+            "website": "https://www.parlophone.co.uk",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 18,
+        "fields": {
+            "name": "Geffen Records",
+            "founded_date": "1980-01-01",
+            "founder": "David Geffen",
+            "country": "US",
+            "city": "Santa Monica",
+            "website": "https://www.geffen.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 19,
+        "fields": {
+            "name": "Blue Note Records",
+            "founded_date": "1939-01-01",
+            "founder": "Alfred Lion",
+            "country": "US",
+            "city": "New York",
+            "website": "https://www.bluenote.com",
+            "email": "",
+            "phone": ""
+        }
+    },
+    {
+        "model": "labels.label",
+        "pk": 20,
+        "fields": {
+            "name": "Sub Pop",
+            "founded_date": "1986-01-01",
+            "founder": "Bruce Pavitt",
+            "country": "US",
+            "city": "Seattle",
+            "website": "https://www.subpop.com",
+            "email": "",
+            "phone": ""
+        }
+    }
+]
