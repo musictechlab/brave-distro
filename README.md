@@ -1,5 +1,7 @@
 # Brave Distro Framework
 
+[![Built by MusicTech Lab](https://musictechlab.io/oss/build-by-musictechlab.io.svg)](https://musictechlab.io)
+
 **Brave Distro Framework** i sa high-level Python web framework built with Django that encourages rapid development for project in MusicTech industry
 
 ## Table of Contents
@@ -176,4 +178,3 @@ SOFTWARE.
   <a href="mailto:office@bravelab.io">Let's talk</a><br>
   Crafted by https://www.bravelab.io
 </div>
-
