@@ -23,7 +23,7 @@ cycler==0.12.1
 diff-match-patch==20230430
 distlib==0.3.8
 dj-database-url==2.2.0
-Django==4.2.13
+Django==4.2.14
 django-browser-reload==1.13.0
 django-countries==7.6.1
 django-extensions==3.2.3
